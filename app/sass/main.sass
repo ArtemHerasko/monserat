@@ -37,6 +37,11 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -52,10 +57,21 @@ ul,li
 	list-style-type: none
 	margin: 0
 	padding: 0
-header
-	background-color: #333
-	height: 92px
-	border-bottom: 1px solid #4c4f52
+.site-header
+	background-color: $gray-bg
+	min-height: 700px
+	height: 100vh
+	.top-line
+		height: 90px
+		border-bottom: 1px solid #4c4f52
+		padding: 18px 50px
+		.main-menu
+			float: right
+
+.logo
+	img
+		width: 230px
+	
 	
 
 @import "media" // Всегда в конце
