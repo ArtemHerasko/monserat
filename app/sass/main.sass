@@ -29,6 +29,9 @@ body textarea:required:valid
 html, body
 	height: 100%
 
+button, input, optgroup, select, textarea:focus
+	outline: none
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -65,8 +68,22 @@ ul,li
 		height: 90px
 		border-bottom: 1px solid #4c4f52
 		padding: 18px 50px
-		.main-menu
+		.main-menu,.hamburger-div
 			float: right
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	background-color: #fff
+	border-radius: 0px
+	height: 2px
+	width: 22px
+.hamburger-box
+	width: 22px
+.hamburger--collapse .hamburger-inner
+	bottom: 4px
+.hamburger-inner::before
+	top: -7px
+.hamburger--collapse .hamburger-inner::after
+	top: -14px
 
 .logo
 	img
