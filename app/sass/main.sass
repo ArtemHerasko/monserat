@@ -67,10 +67,54 @@ ul,li
 	.top-line
 		height: 90px
 		border-bottom: 1px solid #4c4f52
-		padding: 18px 50px
-		.main-menu,.hamburger-div
+		padding: 0px 50px
+		.main-menu,.hamburger-div,.header-search,.header-cart
 			float: right
 
+.sf-menu 
+	a
+		color: #fff
+		border: none
+		padding: 0 18px
+		&:hover
+			background-color: #fff
+			color: #999
+			border-radius: 35px
+	&>li
+		background: transparent
+		padding: 30px 4px
+		&:hover
+			background: transparent
+	.active
+		background-color: #fff
+		color: #999
+		border-radius: 35px
+	
+
+.header-cart
+	padding: 30px 15px;
+	a
+		color: #fff 
+		text-decoration: none
+.cart
+	background-image: url(/img/shop-icon.png)
+	background-repeat: no-repeat
+	width: 24px
+	height: 29px
+	display: block
+	padding: 5px 8px
+	font-size: 14px
+
+.header-search
+	padding: 23px 5px
+	a
+		color: #fff
+		padding: 0px 8px
+		width: 40px
+		font-size: 25px
+		display: block
+.hamburger-div
+	padding: 18px 0
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
 	background-color: #fff
 	border-radius: 0px
@@ -86,6 +130,8 @@ ul,li
 	top: -14px
 
 .logo
+	padding: 19px 0
+	display: inline-block
 	img
 		width: 230px
 	
