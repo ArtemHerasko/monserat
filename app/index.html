@@ -34,11 +34,9 @@
 				<div class="top-line">
 					<a href="#" class="logo"><img src="img/logo_wh.png" alt="Montserrat logo"></a>
 					<div class="hamburger-div">
-						<button class="hamburger hamburger--collapse" type="button">
-							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
-							</span>
-						</button>
+						<a href="#my-menu" class="hamburger hamburger--collapse">
+							<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+						</a>
 					</div>
 					<div class="header-search">
 						<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -46,8 +44,33 @@
 					<div class="header-cart">
 						<a href="#" class="cart">3</a>
 					</div>
-					<nav class="main-menu">
+					<nav class="main-menu visible-lg">
 						<ul class="sf-menu">
+							<li><a class="active" href="#">Home</a></li>
+							<li><a href="#">Pages</a>
+								<ul >
+									<li><a href="#">About us</a>
+										<ul>
+											<li><a href="#">About us 2</a></li>
+											<li><a href="#">About us 3</a></li>
+											<li><a href="#">About us 4</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Pricing</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Elements</a></li>
+						</ul>
+					</nav>
+
+					<nav id="my-menu" class="main-menu">
+						<ul>
 							<li><a class="active" href="#">Home</a></li>
 							<li><a href="#">Pages</a>
 								<ul >

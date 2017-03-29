@@ -5,5 +5,15 @@ $(function() {
     $hamburger.toggleClass("is-active");
     // Do something else, like open/close menu
   });
+  $("#my-menu").mmenu({
+         "offCanvas": {
+            "position": "right"
+         },
+         "extensions": [
+            "theme-dark",
+   
+            "fx-listitems-slide"
+         ]
+      });
 
 });
