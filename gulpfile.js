@@ -21,6 +21,7 @@ gulp.task('scripts', function() {
 		'app/libs/superfish/dist/hoverIntent.min.js',
 		'app/libs/superfish/dist/superfish.min.js',
 		'app/libs/jQuery.mmenu/dist/jquery.mmenu.min.js',
+		'app/libs/OwlCarousel/dist/owl.carousel.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
