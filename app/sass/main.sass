@@ -103,11 +103,11 @@ ul,li
 
 .site-header
 	background-color: $gray-bg
-	min-height: 700px
+	min-height: 300px
 	height: 100vh
 	.top-line
 		height: 90px
-		border-bottom: 1px solid #4c4f52
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4)
 		padding: 0px 50px
 		position: absolute
 		z-index: 99
@@ -122,7 +122,7 @@ ul,li
 		content: ""
 		width: 1px
 		height: 37px
-		background-color: lighten($gray-bg, 25%)
+		background-color: rgba(255, 255, 255, 0.4)
 		display: block
 		position: absolute
 		right: -16px
@@ -160,8 +160,6 @@ ul,li
 		ul
 			li
 				background: lighten($gray-bg, 5%)
-
-
 
 
 
@@ -226,9 +224,76 @@ ul,li
 
 .header-slider
 	color: #fff
-.owl-carousel .owl-stage-outer
+	.owl-nav
+		position: absolute
+		top: 50%
+		width: 100%
+		.owl-next
+			position: absolute
+			right: 0px
+			&:hover
+				background-color: $accent-color
+				&:before
+					right: 5px
+			&:before
+				content: ''
+				background-image: url(/img/rigt-arrow.png)
+				height: 25px
+				width: 50px
+				position: relative
+				display: block
+				top: 24px
+				right: 15px
+				transition: ease-out 0.25s
+		.owl-prev
+			position: absolute
+			&:hover
+				background-color: $accent-color
+				&:before
+					left: 13px
+			&:before
+				content: ''
+				background-image: url(/img/left-arrow.png)
+				height: 25px
+				width: 50px
+				position: relative
+				display: block
+				top: 24px
+				left: 25px
+				transition: ease-out 0.25s
+			left: 0px
+		.owl-next,.owl-prev
+			width: 60px
+			height: 72px
+			background-color: rgba(0, 0, 0, 0.4)
+			transition: ease-out 0.25s 
+	.owl-dots
+		position: absolute
+		width: 100%
+		bottom: 28px
+		text-align: center
+		.owl-dot
+			height: 3px
+			width: 20px
+			margin: 0 10px
+			background-color: #fff
+			display: inline-block
+			&.active
+				background-color: $accent-color
+	.owl-carousel .owl-stage-outer
 		width: 100%	
+		position: relative
 		.carousel-slider-item
 			height: 100vh
+			background-size: cover
+			&:before
+				content: ""
+				background-color: rgba(0, 0, 0, 0.4);
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+
 
 @import "media" // Всегда в конце

@@ -18,7 +18,9 @@ $(function() {
 	$(".carousel-slider").owlCarousel({
 		loop: true,
 		nav: true,
+		navText: ['<span class="left-arrow"></span>','<span class="right-arrow"></span>'],
 		dots: true,
+		dotsEach:true,
 		smartSpeed:700,
 		 responsive:{
         0:{
