@@ -3,31 +3,62 @@
 
 /*==========  Desktop First  ==========*/
 
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	.sf-menu
+		a
+			padding: 0 10px
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.header-flex 
+		.flex-center 
+			.slider-title 
+				.h1
+					font-size: 40px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.site-header 
+		.top-line
+			padding: 0 20px
 
+
+	.header-flex 
+		.flex-center 
+			.slider-title 
+				.h1
+					font-size: 28px
+				p
+					font-size: 14px
+	.button
+		padding: 15px 15px
+		font-size: 10px
+	.header-slider
+		.owl-nav
+			display: none
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	.logo
+	.logo 
 		img
-			width: 150px
+			width: 130px
 			padding-top: 10px
+
+	.header-cart
+    padding: 30px 10px 30px 0px
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
+
 
 
 /*==========  Mobile First  ==========*/
