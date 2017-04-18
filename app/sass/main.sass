@@ -50,9 +50,13 @@ section, header
 	max-width: 100%
 	height: auto
 
+p
+	font-size: 14px
+	color: $text-color
+
 .h1,.h2,.h3,.h4,.h5,.h6,
 	font-family: Montserrat-Regular
-	color:#333333 
+	color: $gray-bg 
 	text-transform: uppercase
 	line-height: 1.4
 b,strong
@@ -300,6 +304,7 @@ ul,li
 				margin: 5px 0 15px
 				font-size: 24px
 				font-family: OpenSans-Light
+				color: #fff
 			.button
 				margin: 0 8px
 				&:last-child
@@ -309,6 +314,46 @@ ul,li
 						background-color: $gray-bg
 						color: #fff
 						transition: background-color .25s ease
+
+.services
+	padding: 100px 0
+
+.service-item
+	&:hover
+			i
+				background-color: $gray-bg
+				transform: rotate(720deg)
+	i
+		background-color: $accent-color
+		color: #fff
+		padding: 10px
+		font-size: 25px
+		line-height: 32px
+		border-radius: 50px
+		width: 50px
+		height: 50px
+		text-align: center
+		transition: all 0.35s
+	h2
+		display: inline-block
+		font-size: 17px
+		margin: 0
+		font-weight: 400
+		position: relative
+		bottom: 10px
+		left: 15px
+		&::before
+			content: ''
+			width: 80px
+			height: 1px
+			background-color: #eeeeee
+			display: block
+			position: absolute
+			bottom: -10px
+
+
+
+
 				
 
 
