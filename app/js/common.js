@@ -8,6 +8,11 @@ $(function() {
 		},
 		'extensions': ['theme-dark', 'fx-listitems-slide']
 	});
+	
+	$(".accordeon dd").hide().prev().click(function() {
+	$(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+	$(this).next().not(":visible").slideDown().prev().addClass("active");
+	})
 
 	var api = $('#my-menu').data( 'mmenu' );
 	api.bind( 'open:finish', function() {
