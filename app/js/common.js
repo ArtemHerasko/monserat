@@ -10,8 +10,8 @@ $(function() {
 	});
 	
 	$(".accordeon dd").hide().prev().click(function() {
-	$(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
-	$(this).next().not(":visible").slideDown().prev().addClass("active");
+	$(this).parents(".accordeon").find("dd").not(this).slideUp(150).prev().removeClass("active");
+	$(this).next().not(":visible").slideDown(150).prev().addClass("active");
 	})
 
 	var api = $('#my-menu').data( 'mmenu' );
@@ -21,7 +21,6 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 	});
 	$(".carousel-slider").owlCarousel({
-		loop: true,
 		nav: true,
 		navText: ['<span class="left-arrow"></span>','<span class="right-arrow"></span>'],
 		dots: true,
