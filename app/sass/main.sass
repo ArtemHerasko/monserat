@@ -39,7 +39,7 @@ body
 	position: relative
 	line-height: 1.75
 	font-family: $default-font
-	overflow-x: hidden
+	
 
 section, header
 	position: relative
@@ -108,6 +108,9 @@ ul,li
 		width: 100%
 		.main-menu,.hamburger-div,.header-search,.header-cart
 			float: right
+	.fixed-header
+		position: fixed
+		background-color: #fff
 .main-menu
 	padding-right: 30px
 .sf-menu
@@ -216,6 +219,10 @@ ul,li
 	transition: 0.25s ease-out
 	color: $accent-color	
 
+
+.mm-opened
+	.owl-carousel.owl-drag .owl-item
+		margin-left: 5px
 .header-slider
 	color: #fff
 	.owl-nav
@@ -315,6 +322,8 @@ ul,li
 						background-color: $gray-bg
 						color: #fff
 						transition: background-color .25s ease
+
+
 
 .services
 	padding: 100px 0
