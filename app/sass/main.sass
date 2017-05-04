@@ -35,7 +35,9 @@ body
 	position: relative
 	line-height: 1.75
 	font-family: $default-font
-	overflow-x: hidden
+html.mm-blocking body
+	overflow: scroll
+	
 
 section, header
 	position: relative
@@ -102,8 +104,14 @@ ul,li
 		position: absolute
 		z-index: 99
 		width: 100%
+		transition: all 0.35s
 		.main-menu,.hamburger-div,.header-search,.header-cart
 			float: right
+	.fixed-header
+		position: fixed
+		background-color: rgba(0,0,0, .7)
+		border-bottom: none
+		transition: all 0.35s
 .main-menu
 	padding-right: 30px
 .sf-menu
@@ -212,6 +220,10 @@ ul,li
 	transition: 0.25s ease-out
 	color: $accent-color	
 
+
+.mm-opened
+	.owl-carousel.owl-drag .owl-item
+		margin-left: 0px
 .header-slider
 	color: #fff
 	.owl-nav
@@ -311,6 +323,8 @@ ul,li
 						background-color: $gray-bg
 						color: #fff
 						transition: background-color .25s ease
+
+
 
 .services
 	padding: 100px 0
@@ -438,6 +452,10 @@ ul,li
 						position: absolute
 						top: -12px
 						left: -48px
+
+::-webkit-scroll
+	barwidth: 10px
+	background-color: #323a45
 
 			
 
