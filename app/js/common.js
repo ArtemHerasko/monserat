@@ -4,7 +4,8 @@ $(function() {
 
 	$('#my-menu').mmenu({
 		'offCanvas': {
-			'position': 'right'
+			'position': 'right',
+			'zposition': 'front'
 		},
 		'extensions': ['theme-dark', 'fx-listitems-slide']
 	});
