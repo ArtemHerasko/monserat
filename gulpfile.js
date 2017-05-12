@@ -23,6 +23,7 @@ gulp.task('scripts', function() {
 		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.min.js',
 		'app/libs/jQuery.mmenu/dist/addons/fixedelements/jquery.mmenu.fixedelements.min.js',
 		'app/libs/OwlCarousel/dist/owl.carousel.min.js',
+		'app/libs/isotope/dist/isotope.pkgd.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

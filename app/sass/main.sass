@@ -25,10 +25,7 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
 	color: #666
-
-
 	
-
 button, input, optgroup, select, textarea:focus
 	outline: none
 
@@ -38,6 +35,8 @@ body
 	position: relative
 	line-height: 1.75
 	font-family: $default-font
+html.mm-blocking body
+	overflow: scroll
 	
 
 section, header
@@ -105,14 +104,14 @@ ul,li
 		position: absolute
 		z-index: 99
 		width: 100%
-		transition: all 0.45s
+		transition: all 0.35s
 		.main-menu,.hamburger-div,.header-search,.header-cart
 			float: right
 	.fixed-header
 		position: fixed
 		background-color: rgba(0,0,0, .7)
-		transition: all 0.4s
 		border-bottom: none
+		transition: all 0.35s
 .main-menu
 	padding-right: 30px
 .sf-menu
@@ -224,7 +223,7 @@ ul,li
 
 .mm-opened
 	.owl-carousel.owl-drag .owl-item
-		margin-left: 5px
+		margin-left: 0px
 .header-slider
 	color: #fff
 	.owl-nav
@@ -369,7 +368,7 @@ ul,li
 		padding: 0
 	.choose-img
 		width: 100%
-		height: 600px
+		height: 630px
 		background-size: cover
 	.choose-content
 		padding: 70px 30px 70px 70px
@@ -441,7 +440,6 @@ ul,li
 			dd
 				margin: 0
 				color: $text-color
-				padding-top: 20px
 				position: relative
 				span
 					&::before
@@ -453,6 +451,42 @@ ul,li
 						position: absolute
 						top: -12px
 						left: -48px
+
+.portfolio
+	padding-top: 90px
+.section-title
+	text-align: center
+	h2
+		font-size: 22px
+		font-weight: 300
+		letter-spacing: 1px
+		&::before
+			content: ''
+			width: 140px
+			height: 2px
+			background-color: $accent-color
+			display: block
+			position: relative
+			top: 50px
+			left: 210px
+	p
+		padding-top: 20px
+		font-size: 16px
+
+.grid-item
+	width: 25%
+.grid-item--width2 
+	width: 50%
+.button-group
+	text-align: center
+.sort-button
+	background-color: transparent
+	border-top: 0px
+	border-bottom: 0px
+	text-transform: uppercase
+	&.is-checked
+		color: $accent-color
+
 
 
 
