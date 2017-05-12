@@ -20,7 +20,8 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/superfish/dist/hoverIntent.min.js',
 		'app/libs/superfish/dist/superfish.min.js',
-		'app/libs/jQuery.mmenu/dist/jquery.mmenu.min.js',
+		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.min.js',
+		'app/libs/jQuery.mmenu/dist/addons/fixedelements/jquery.mmenu.fixedelements.min.js',
 		'app/libs/OwlCarousel/dist/owl.carousel.min.js',
 		'app/js/common.js', // Всегда в конце
 		])

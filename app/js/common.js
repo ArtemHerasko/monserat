@@ -2,19 +2,20 @@ $(function() {
 
 	
 
-	$('#my-menu').mmenu({
+	$('nav#my-menu').mmenu({
+		'pageScroll': true,
 		'offCanvas': {
-			'position': 'right'
+			'position': 'right',
 		},
-		'extensions': ['theme-dark', 'fx-listitems-slide']
+		'extensions': ['theme-dark', 'fx-listitems-slide', 'widescrean' , 'pagedim-black']
 	});
 
 	var $menu = $("#top-menu");
 
         $(window).scroll(function(){
-            if ( $(this).scrollTop() > 180 && $menu.hasClass("default") ){
+            if ( $(this).scrollTop() > 50 && $menu.hasClass("default") ){
                 $menu.removeClass("default").addClass("fixed-header");
-            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed-header")) {
+            } else if($(this).scrollTop() <= 50 && $menu.hasClass("fixed-header")) {
                 $menu.removeClass("fixed-header").addClass("default");
             }
         });

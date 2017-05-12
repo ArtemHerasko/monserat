@@ -15,19 +15,13 @@
 		<script type="text/javascript">
 			$(function() {
 				$('nav#menu').mmenu();
-				var api = $("#menu").data( "mmenu" );
-api.bind( "open:start", function() {
-	$(".hum").addClass("is-active");
-}).bind("close:finish", function(){
-		$(".hum").removeClass("is-active");
-});
 			});
 		</script>
 	</head>
 	<body>
 		<div id="page">
 			<div class="header">
-				<a href="#menu" class="hum"><span></span></a>
+				<a href="#menu"><span></span></a>
 				Demo
 			</div>
 			<div class="content">

@@ -26,8 +26,7 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-html, body
-	height: 100%
+
 	
 
 button, input, optgroup, select, textarea:focus
@@ -106,11 +105,14 @@ ul,li
 		position: absolute
 		z-index: 99
 		width: 100%
+		transition: all 0.45s
 		.main-menu,.hamburger-div,.header-search,.header-cart
 			float: right
 	.fixed-header
 		position: fixed
-		background-color: #fff
+		background-color: rgba(0,0,0, .7)
+		transition: all 0.4s
+		border-bottom: none
 .main-menu
 	padding-right: 30px
 .sf-menu
@@ -451,8 +453,6 @@ ul,li
 						position: absolute
 						top: -12px
 						left: -48px
-
-			
 
 
 
