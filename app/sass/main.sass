@@ -473,20 +473,116 @@ ul,li
 		padding-top: 20px
 		font-size: 16px
 
-.grid-item
-	width: 25%
-.grid-item--width2 
-	width: 50%
 .button-group
 	text-align: center
+	padding-top: 20px
 .sort-button
 	background-color: transparent
 	border-top: 0px
 	border-bottom: 0px
+	border-left: 1px solid #e9e9e9
 	text-transform: uppercase
+	font-size: 13px
+	font-family: Montserrat-Regular, sans-serif
+	color: $title-color
+	border-right: 1px solid #e9e9e9
+	padding: 0px 25px
+	margin: 0px -1px
+	&:last-child
+		border-right: none
+	&:first-child
+		border-left: none
+
 	&.is-checked
 		color: $accent-color
 
+.grid
+	margin-top: 60px
+	.element-item
+		width: 25%
+		margin-bottom: -1px
+		.image-item
+			position: relative
+			overflow: hidden
+		.image-item-ink
+		  display: block;
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top: 0px
+		  transition: all .3s
+		&:hover
+			a
+			.potfolio-item-title
+				opacity: 1
+			.image-item-ink
+				background-color: rgba(0,0,0,.5)
+			img
+				transform: translate(0px,-20px)
+		img
+			max-width: 100%
+			transition: all .3s
+
+	&::after
+		width: 100%
+		height: 100%
+		display: 
+		background-color: #000
+
+.potfolio-item-title
+	text-align: center
+	position: absolute
+	background-color: #fff
+	bottom: 0
+	width: 100%
+	transition: all 0.3s
+	opacity: 0
+	padding: 10px 0
+	.item-link
+		background-color: $accent-color
+		color: #fff
+		font-size: 22px
+		font-family: Montserrat-Regular, sans-serif
+		height: 40px
+		width: 40px
+		padding: 1px
+		display: block
+		border-radius: 40px
+		position: relative
+		margin: 0 auto
+		top: -30px
+		text-decoration: none
+		transition: all 0.25s
+		&:hover
+			transform: rotate(90deg)
+	h3
+		margin: -10px 0 0 0
+		font-size: 14px
+	.item-category
+		margin-top: 5px
+		a
+			color: $title-color
+			border-right: 1px solid #c6c6c6
+			padding: 0px 5px
+			transition: all 0.25s
+			text-decoration: none 
+			&:hover
+				color: $accent-color
+			&:last-child
+				border-right: none
+.load-more
+	text-align: center
+	text-transform: uppercase
+	font-family: Montserrat-Regular, open-sans
+	padding: 70px 0
+	a
+		color: $title-color
+		border: 1px solid #d6d6d6
+		padding: 10px 50px
+		text-decoration: none
+		transition: all 0.25s
+		&:hover
+			background-color: #d6d6d6
 
 
 
