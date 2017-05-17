@@ -468,7 +468,7 @@ ul,li
 			display: block
 			position: relative
 			top: 50px
-			left: 210px
+			margin: 0 auto
 	p
 		padding-top: 20px
 		font-size: 16px
@@ -499,7 +499,6 @@ ul,li
 .grid
 	margin-top: 60px
 	.element-item
-		width: 25%
 		margin-bottom: -1px
 		.image-item
 			position: relative
@@ -583,6 +582,26 @@ ul,li
 		transition: all 0.25s
 		&:hover
 			background-color: #d6d6d6
+
+.counter-facts
+	text-align: center
+	background-attachment: fixed
+	font-family: Montserrat-Bold, sans-serif
+	padding: 47px 0
+.counter-item
+	border-left: 1px solid #4c4f52
+	border-right: 1px solid #4c4f52
+	&::last-child
+		border-right: none
+	&:first-child
+
+	.count
+		color: #fff
+		font-size: 56px
+	p
+		color: $accent-color
+		text-transform: uppercase
+		margin: 0
 
 
 

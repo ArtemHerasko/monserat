@@ -7,6 +7,8 @@ $(function() {
 		'extensions': ['theme-dark', 'fx-listitems-slide','pagedim-black']
 	});
 
+
+
 	var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
@@ -40,6 +42,18 @@ $('.button-group').each( function( i, buttonGroup ) {
   });
 });
 
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
 	var $menu = $("#top-menu");
 
         $(window).scroll(function(){
@@ -64,6 +78,8 @@ $('.button-group').each( function( i, buttonGroup ) {
 	$(".carousel-slider").owlCarousel({
 		
     items:1,
+    nav: true,
+    navText:[,],
     singleItem: true,
     center: true,
     loop: true
