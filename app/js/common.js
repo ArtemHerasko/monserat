@@ -120,8 +120,6 @@ $(".client-slider").owlCarousel({
       }
 	});
 $(".blog-slider").owlCarousel({
-    nav: true,
-    navText:[,],
     loop: true,
     responsive:{
         0:{
