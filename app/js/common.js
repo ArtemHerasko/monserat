@@ -84,4 +84,55 @@ $('.count').each(function () {
     center: true,
     loop: true
 	});
+
+$(".testimonials-slider").owlCarousel({
+    nav: true,
+    navText:[,],
+    loop: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        992:{
+            items:3
+        }
+      }
+	});
+$(".client-slider").owlCarousel({
+    
+    loop: true,
+    responsive:{
+        0:{
+            items:2
+        },
+        480:{
+            items:3
+        },
+         768:{
+            items:4
+        },
+        992:{
+            items:5
+        }
+      }
+	});
+$(".blog-slider").owlCarousel({
+    nav: true,
+    navText:[,],
+    loop: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        992:{
+            items:3
+        }
+      }
+	});
 });

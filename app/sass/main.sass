@@ -220,13 +220,7 @@ ul,li
 	transition: 0.25s ease-out
 	color: $accent-color	
 
-
-.mm-opened
-	.owl-carousel.owl-drag .owl-item
-		margin-left: 0px
-.header-slider
-	color: #fff
-	.owl-nav
+.owl-nav
 		position: absolute
 		top: 50%
 		width: 100%
@@ -240,6 +234,7 @@ ul,li
 			&:before
 				content: ''
 				background-image: url(/img/rigt-arrow.png)
+				background-repeat: no-repeat
 				height: 25px
 				width: 50px
 				position: relative
@@ -256,6 +251,7 @@ ul,li
 			&:before
 				content: ''
 				background-image: url(/img/left-arrow.png)
+				background-repeat: no-repeat
 				height: 25px
 				width: 50px
 				position: relative
@@ -269,6 +265,13 @@ ul,li
 			height: 72px
 			background-color: rgba(0, 0, 0, 0.4)
 			transition: ease-out 0.25s 
+
+.mm-opened
+	.owl-carousel.owl-drag .owl-item
+		margin-left: 0px
+.header-slider
+	color: #fff
+	
 	.owl-dots
 		position: absolute
 		width: 100%
@@ -587,13 +590,20 @@ ul,li
 	text-align: center
 	background-attachment: fixed
 	font-family: Montserrat-Bold, sans-serif
-	padding: 47px 0
-.counter-item
-	border-left: 1px solid #4c4f52
-	border-right: 1px solid #4c4f52
-	&::last-child
-		border-right: none
+	padding: 37px 0
+
+.count-border
+	border-left: 1px double #4c4f52
+	padding: 0px 2px
 	&:first-child
+		border-left: none
+		.counter-item
+			border-left: none
+.counter-item
+	border-left: 1px double #4c4f52
+	padding: 10px 0
+	>:first-child
+		border-left: none
 
 	.count
 		color: #fff
@@ -602,6 +612,103 @@ ul,li
 		color: $accent-color
 		text-transform: uppercase
 		margin: 0
+
+.testimonials-section
+	padding: 120px 0
+	overflow: hidden
+	.owl-nav
+		.owl-next
+			right: -65px
+			&::before
+				background-image: url(/img/left-arrow-grey.png)
+				top: 17px
+				transform: rotate(180deg)
+				width: 38px
+			&:hover
+				background-color: $gray-bg
+		.owl-prev
+			left: -65px
+			&:hover
+				background-color: $gray-bg
+			&::before
+				background-image: url(/img/left-arrow-grey.png)
+				top: 17px
+
+		.owl-next,.owl-prev
+			background-color: #f5f5f5
+			width: 47px
+			height: 57px
+
+	.testimonials-wraper
+		text-align: center
+		padding: 0 12px
+		img
+			width: auto
+			margin: 0 auto
+			position: relative
+			top: 50px
+			border: 5px solid #fff
+			border-radius: 52px
+			max-width: 102px
+			max-height: 102px
+		.testimonials-description
+			border: 1px solid #e0e0e0
+			border-radius: 4px
+			padding: 50px 35px 40px 35px
+			p
+				overflow: hidden
+				max-height: 94px
+    		
+			.name
+				color: $accent-color
+				display: block
+				padding-top: 50px
+				&::before
+					content: ''
+					width: 80px
+					height: 1px
+					background-color: #e0e0e0
+					display: block
+					position: relative
+					bottom: 30px
+					margin: 0 auto
+
+			.position
+				font-family: PTSerif-Italic, sans-serif
+				color: $title-color
+.cliets-logo
+	background-color: #f5f5f5
+	padding: 80px 0
+	.owl-carousel 
+		.owl-item
+			img
+				width: auto
+				margin: 0 auto
+				transition: all 0.3s
+				&:hover
+					opacity: 0.8
+
+.blog-section
+	text-align: center
+	.blog-bg-wrapper
+		padding: 85px 0 265px
+		background-repeat: no-repeat
+		background-size: cover
+		background-attachment: fixed
+		.section-title
+			h2,p
+				color: #fff
+			p
+				opacity: .7
+
+.blog-item-wrapper
+	margin-top: -215px
+	.blog-item
+		padding: 0px 12px
+
+
+
+
 
 
 
